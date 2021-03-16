@@ -4,7 +4,6 @@ services:
     container_name: neo4j
     build:
       context: ./neo4j
-    restart: always
     ports:
       - 7474:7474
       - 7687:7687
