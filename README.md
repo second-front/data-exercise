@@ -10,7 +10,7 @@ Tested and ran on
 
 To build and run: `docker-compose up --build`
 
-To tunnel into the Neo4j container: `docker exec -it neo4j`
+To tunnel into the Neo4j container: `docker exec -it neo4j bash`
 
 Once the container starts, you can access the Neo4j Browser via [http://localhost:7474/browser/](http://localhost:7474/browser/)
 
