@@ -45,7 +45,6 @@ Base Criteria
 Here is a starting point for source data [DATA.GOV Catalog](https://catalog.data.gov/dataset).
 
 Bonus
-- [ ] Containerize the program
 - [ ] Clean commit history
 - [ ] Testing coverage
 - [ ] Low reliance on third party dependencies
