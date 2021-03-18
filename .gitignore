@@ -1,0 +1,7 @@
+# jupyter notebooks (dev mode only)
+jupyter/notebooks/.*
+jupyter/notebooks/examples/.*
+jupyter/notebooks/local_only/**
+!jupyter/notebooks/local_only/*.md
+jupyter/notebooks/modules/**
+!jupyter/notebooks/modules/*.py

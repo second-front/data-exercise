@@ -1,6 +1,6 @@
 # Getting Started
 
-Requirements - You'll need docker installed
+You'll need Docker installed
 
 ```
 Tested and ran on
@@ -8,23 +8,44 @@ Tested and ran on
 - docker-compose version 1.21.2, build a133471
 ```
 
-To build and run: `docker-compose up --build`
+After you clone the repo, to build and run: `docker-compose up --build`
 
-To tunnel into the Neo4j container: `docker exec -it neo4j bash`
+This starts two containers:
+1. `exercise_neo4j`
+    * You can access the Neo4j Browser via [http://localhost:7474/browser/](http://localhost:7474/browser/)
+    * DB Connection Info
+        * Connect URL: `bolt://localhost:7687`
+        * Username: `neo4j`
+        * Password: `test`
+        * Active database: `graph.db`
+1. `exercise_jupyter`
+    * Will be available on [http://localhost:8888/tree](http://localhost:8888/tree)
+        * A token is generated after this container starts. You can find this value in the console. It will look something like `http://localhost:8888/?token=c2c259d81a929ddd3340eafcce74f37f83e935c79fa17f9b` or `http://127.0.0.1:8888/?token=ec7bce946a64612b55ab25fe9e008198296fa6421bdb9926`
+        * This container uses the [jupyter-pyspark-notebook Docker image from the distro](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#core-stacks)
 
-Once the container starts, you can access the Neo4j Browser via [http://localhost:7474/browser/](http://localhost:7474/browser/)
 
-DB Connection Info
-* Connect URL: `bolt://localhost:7687`
-* Username: `neo4j`
-* Password: `test`
-* Active database: `graph.db`
+You can tunnel into the a container: `docker exec -it <CONTAINER NAME> bash`
 
-> After you login once, your connection credentials are stored in your web browser
+> For each container, after you login once, your connection credentials are stored in your web browser
 
 # The Exercise
 
-1. Write a script to consume three or more realted open source APIs to populate the database
-1. Provide the instructions to run your script
+The following instruction set is vague by design. This is your oppertunity to put your technical chops as data engineer on display so have fun with this!
 
-Here is a starting point for data [DATA.GOV Catalog](https://catalog.data.gov/dataset)
+There are many ways to perform this exercise. Limit your time to four hours. Commit your code often. When you're complete, or when you've reached the time limit, push your final commit. The final commit message must contain the following string "FINAL-COMMIT," to mark the end of the exercise. Submit a link to the repo when you're complete. Be sure to include a detailed Readme File so we can run your submission.
+
+You are free to modify any of the provided infrastructure to meet your needs.
+
+Base Criteria
+- [ ] Write a script to consume three or more realted open source APIs to populate the database
+- [ ] Provide instructions on how to run your script
+- [ ] Visually render the data inside of a notebook
+- [ ] Provide some light data analytics
+
+Here is a starting point for source data [DATA.GOV Catalog](https://catalog.data.gov/dataset).
+
+Bonus
+- [ ] Containerize the program
+- [ ] Clean commit history
+- [ ] Testing coverage
+- [ ] Low reliance on third party dependencies
