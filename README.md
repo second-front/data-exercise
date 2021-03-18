@@ -37,7 +37,7 @@ There are many ways to perform this exercise. Limit your time to four hours. Com
 You are free to modify any of the provided infrastructure to meet your needs.
 
 Base Criteria
-- [ ] Write a script to consume three or more realted open source APIs to populate the database
+- [ ] Write a script to consume three or more realted open source APIs to populate a datastore
 - [ ] Provide instructions on how to run your script
 - [ ] Visually render the data inside of a notebook
 - [ ] Provide some light data analytics
