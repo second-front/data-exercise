@@ -24,7 +24,7 @@ This starts two containers:
         * This container uses the [jupyter-pyspark-notebook Docker image from the distro](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#core-stacks)
 
 
-You can tunnel into the a container: `docker exec -it <CONTAINER NAME> bash`
+You can tunnel into either container by running: `docker exec -it <CONTAINER NAME> bash`
 
 > For each container, after you login once, your connection credentials are stored in your web browser
 
