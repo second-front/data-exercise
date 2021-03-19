@@ -30,7 +30,7 @@ You can tunnel into the a container: `docker exec -it <CONTAINER NAME> bash`
 
 # The Exercise
 
-The following instruction set is vague by design. This is your oppertunity to put your technical chops as data engineer on display so have fun with this!
+The following instruction set is vague by design. This is your opportunity to put your technical chops as data engineer on display so have fun with this!
 
 There are many ways to perform this exercise. Limit your time to four hours. Commit your code often. When you're complete, or when you've reached the time limit, push your final commit. The final commit message must contain the following string "FINAL-COMMIT," to mark the end of the exercise. Submit a link to the repo when you're complete. Be sure to include a detailed Readme File so we can run your submission.
 
