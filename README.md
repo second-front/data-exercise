@@ -14,10 +14,13 @@ This starts two containers:
 1. `exercise_neo4j`
     * You can access the Neo4j Browser via [http://localhost:7474/browser/](http://localhost:7474/browser/)
     * DB Connection Info
-        * Connect URL: `bolt://localhost:7687`
         * Username: `neo4j`
         * Password: `test`
-        * Active database: `graph.db`
+        * Active database: `graph.db`    
+        * Generated Connection URL: ~~`bolt://localhost:7687`~~
+            * Since Neo4j is a running in a container, you can refernce the name (`exercise_neo4j`) as the Docker Connection URL from Juypter
+                * `"bolt://neo4j:test@exercise_neo4j"`
+
 1. `exercise_jupyter`
     * Will be available on [http://localhost:8888/tree](http://localhost:8888/tree)
         * A token is generated after this container starts. You can find this value in the console. It will look something like `http://localhost:8888/?token=c2c259d81a929ddd3340eafcce74f37f83e935c79fa17f9b` or `http://127.0.0.1:8888/?token=ec7bce946a64612b55ab25fe9e008198296fa6421bdb9926`
