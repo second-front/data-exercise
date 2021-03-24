@@ -18,7 +18,7 @@ This starts two containers:
         * Password: `test`
         * Active database: `graph.db`    
         * Generated Connection URL: ~~`bolt://localhost:7687`~~
-            * Since Neo4j is a running in a container, you can reference the name (`exercise_neo4j`) as the Docker Connection URL from Juypter
+            * Since Neo4j is a running in a container, you can reference the name (`exercise_neo4j`) as the host name in the Docker Connection URL from Juypter
                 * `"bolt://neo4j:test@exercise_neo4j"`
 
 1. `exercise_jupyter`
